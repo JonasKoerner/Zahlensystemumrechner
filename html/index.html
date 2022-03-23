@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zahlensystemumrechner</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+<body>
+
+<h3>Umrechner für das binäre, dezimale und hexadezimale Zahlensystem</h3>
+<hr>
+<div id="img">
+    <div id="img1"><img src="../img/Algorithmus_anderes_Zahlensystem_in_Dezimalsystem.png" width="410"
+     alt="Algorithmus, um von anderen Zahlensystemen in das Dezimalsystem umzurechnen">
+    </div>
+    <div id="img2"><img src="../img/Algorithmus_Dezimalsystem_in_anderes_Zahlensystem.png" width="410"
+     alt="Algorithmus, um vom Dezimalsystem in andere Zahlensysteme umzurechnen">
+    </div>
+</div>
+
+<p><b>Schrittfolge</b> zur Nutzung des Umrechners:</p>
+<ol>
+    <li>Wähle ein Ausgangszahlensystem</li>
+    <li>Schreibe eine im Ausgangszahlensystem enthaltene Zahl in das Textfeld</li>
+    <li>Drücke umrechnen, damit die Zahl in die anderen Zahlensysteme umgerechnet wird</li>
+</ol>
+
+<div>
+    <form>
+        <label>
+            <select id="basiswahl" size="1">
+                <option value="2">Basis 2 (Binärsystem):</option>
+                <option value="10">Basis 10 (Dezimalsystem):</option>
+                <option value="16">Basis 16 (Hexadezimalsystem):</option>
+            </select>
+        </label>
+    </form>
+</div>
+
+<!-- Simple Textfield -->
+<form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="tf1">
+        <label class="mdl-textfield__label" for="tf1">Eingabewert...</label>
+    </div>
+</form>
+<p id="fehler"></p>
+
+<!-- Colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="button"
+        onclick="tfAuslesen()">
+        Umrechnen
+</button>
+<br>
+<br>
+<table>
+    <tr>
+        <td><a href="https://de.wikipedia.org/wiki/Dualsystem">Binärsystem:</a></td>
+        <td id="ausgabe1"></td>
+    </tr>
+    <tr>
+        <td><a href="https://de.wikipedia.org/wiki/Dezimalsystem">Dezimalsystem:</a></td>
+        <td id="ausgabe2"></td>
+    </tr>
+    <tr>
+        <td><a href="https://de.wikipedia.org/wiki/Hexadezimalsystem">Hexadezimalsystem:</a></td>
+        <td id="ausgabe3"></td>
+    </tr>
+</table>
+
+</body>
+</html>

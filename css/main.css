@@ -1,0 +1,36 @@
+body {
+    background-color: #BBB;
+}
+h3 {
+    text-align: center;
+}
+
+a:link {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkmagenta;
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 5px 5px 5px 6px;
+    text-decoration: underline;
+}
+
+#button:hover {
+    background-color: white;
+    color: blue;
+    border-style: solid;
+}
+
+#img {
+    float: right;
+    margin-right: 10%;
+}
+
+img {
+    margin-bottom: 5px;
+}
