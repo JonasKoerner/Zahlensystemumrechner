@@ -72,6 +72,7 @@ function tfAuslesen () {
             hexErgebnis = number;
         }
     }
+    // Ausgabe auf Webseite anzeigen
     document.getElementById("ausgabe1").innerHTML = binErgebnis;
     document.getElementById("ausgabe2").innerHTML = dezErgebnis;
     document.getElementById("ausgabe3").innerHTML = hexErgebnis;
